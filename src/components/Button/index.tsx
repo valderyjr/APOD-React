@@ -4,14 +4,12 @@ import style from './Button.module.scss'
 
 interface Props {
 	nome: String;
-	margem?: boolean
 }
 
-const Button = ({nome, margem}: Props) => {
+const Button = ({nome}: Props) => {
 	return (
 		<button type='button' className={classNames({
-			[style.button]: true,
-			[style['button--margem']]: margem === true
+			[style.button]: true
 		})}>
 			{nome}
 		</button>
