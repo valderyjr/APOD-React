@@ -1,0 +1,14 @@
+@import 'styles/_variables.scss';
+
+.button {
+	background-color: $azul;
+	color: $cinza;
+	width: fit-content;
+	padding: 10px;
+	border: 0;
+	border-radius: 5px;
+	
+	&--margem {
+		margin: 2rem 0;
+	}
+}
