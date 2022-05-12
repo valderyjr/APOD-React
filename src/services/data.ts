@@ -8,11 +8,20 @@ export async function getCurrentDay() {
 		const currentDay = DiaAtual();
 
 		const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=${currentDay}`);
-		// const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=2022-02-01`);
 
 		const dados: IDados = response.data;
 		return dados
 	} catch (error) {
 		return Error('Erro ao acessar a foto do dia.')
+	}
+}
+
+export async function getOneDay(data: string) {
+	try {
+		const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=${data}`)
+		const dados: IDados = response.data;
+		return dados
+	} catch (error) {
+		return Error('Erro interno.')
 	}
 }

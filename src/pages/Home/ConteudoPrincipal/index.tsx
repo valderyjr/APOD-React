@@ -18,7 +18,7 @@ const ConteudoPrincipal = () => {
 					</div>
 				</div>
 
-				<Button nome = 'Quero ver mais'/> 
+				<Button nome = 'Quero ver mais' margem={true}/> 
 			</section>
 		</>
 	)

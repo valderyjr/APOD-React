@@ -1,4 +1,4 @@
-export type IDados = {
+export interface IDados {
 	copyright?: string,
 	date: string,
 	explanation: string,

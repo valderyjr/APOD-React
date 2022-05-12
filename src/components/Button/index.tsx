@@ -3,13 +3,16 @@ import classNames from 'classnames';
 import style from './Button.module.scss'
 
 interface Props {
-	nome: String;
+	nome: string,
+	type?: "button" | "submit" | "reset" | undefined
+	margem?: boolean
 }
 
-const Button = ({nome}: Props) => {
+const Button = ({nome, type, margem}: Props) => {
 	return (
-		<button type='button' className={classNames({
-			[style.button]: true
+		<button type={type || 'button'} className={classNames({
+			[style.button]: true,
+			[style.button__margem]: margem === true
 		})}>
 			{nome}
 		</button>
