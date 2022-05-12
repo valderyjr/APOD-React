@@ -37,10 +37,20 @@
 	font-size: .875rem;
 	text-decoration: none;
 	font-weight: 600;
-	padding-bottom: .375rem;
 
-	&:hover {
-		border-bottom: 2px solid $azul;
+	&::after {
+		content: '';
+		margin-top: .275rem;
+		width: 0%;
+		height: 2px;
+		color: $azul;
+		background-color: $azul;
+		display: block;
+		transition: .35s;
+	}
+
+	&:hover::after {
+		width: 100%;
 	}
 
 	@media (min-width: 768px) {
