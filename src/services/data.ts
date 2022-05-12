@@ -8,7 +8,7 @@ export async function getCurrentDay() {
 		const currentDay = DiaAtual();
 
 		const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=${currentDay}`);
-		// const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=2022-03-22`);
+		// const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=NqBxvsgm294FLGzK7ObEtTrcOQKp1wSlyu64wYmH&date=2022-02-01`);
 
 		const dados: IDados = response.data;
 		return dados
