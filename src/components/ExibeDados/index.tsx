@@ -6,7 +6,6 @@ interface Props {
 }
 
 const ExibeDados = ({dados}: Props) => {
-	console.log(dados)
 	return (
 		<section className={style.secao}>
 		

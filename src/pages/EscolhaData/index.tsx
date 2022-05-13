@@ -20,6 +20,7 @@ const EscolhaData = () => {
 	
 	const currentDay = DiaAtual();
 
+
 	const formSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
 		evento.preventDefault();
 		const erros = verificaErro(data)
