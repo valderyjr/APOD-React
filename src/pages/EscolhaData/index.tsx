@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import style from './EscolhaData.module.scss'
-import Button from "components/Button";
-import { DiaAtual, verificaErro } from "helpers/data";
+import Button from "../../components/Button";
+import { DiaAtual, verificaErro } from "../../helpers/data";
 import classNames from "classnames";
-import { getOneDay } from "services/data";
-import { IDados } from "interface/IDados";
-import ExibeDados from "components/ExibeDados";
+import { getOneDay } from "../../services/data";
+import { IDados } from "../../interface/IDados";
+import ExibeDados from "../../components/ExibeDados";
 
 const EscolhaData = () => {
 	const [data, setData] = useState<string>('');

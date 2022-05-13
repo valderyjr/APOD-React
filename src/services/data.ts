@@ -1,6 +1,6 @@
-import { IDados } from 'interface/IDados';
+import { IDados } from '../interface/IDados';
 import axios from "axios";
-import { DiaAtual } from 'helpers/data';
+import { DiaAtual } from '../helpers/data';
 
 
 export async function getCurrentDay() {

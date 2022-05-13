@@ -1,4 +1,4 @@
-import ConteudoPrincipal from './ConteudoPrincipal';
+import ConteudoPrincipal from './ConteudoPrincipal/';
 
 function PaginaPrincipal() {
   return (

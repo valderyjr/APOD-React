@@ -1,6 +1,6 @@
 import style from './ConteudoPrincipal.module.scss';
-import imgExemplo from 'assets/imgExemplo.jpg';
-import Button from 'components/Button'
+import imgExemplo from '../../../assets/imgExemplo.jpg';
+import Button from '../../../components/Button'
 
 const ConteudoPrincipal = () => {
 	return (

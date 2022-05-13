@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import style from './DoDia.module.scss';
-import { getCurrentDay } from 'services/data'
-import { IDados } from 'interface/IDados';
-import ExibeDados from 'components/ExibeDados';
+import { getCurrentDay } from '../../services/data'
+import { IDados } from '../../interface/IDados';
+import ExibeDados from '../../components/ExibeDados';
 
 const PaginaDoDia = () => {
 	const [dados, setDados] = useState<IDados>();

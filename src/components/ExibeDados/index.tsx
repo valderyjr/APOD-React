@@ -1,4 +1,4 @@
-import { IDados } from "interface/IDados"
+import { IDados } from "../../interface/IDados"
 import style from './ExibeDados.module.scss'
 
 interface Props {

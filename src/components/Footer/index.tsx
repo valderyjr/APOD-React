@@ -1,6 +1,6 @@
 import style from './Footer.module.scss'
-import { ReactComponent as Linkedin } from 'assets/linkedin.svg'
-import { ReactComponent as GitHub } from 'assets/github.svg'
+import { ReactComponent as Linkedin } from '../../assets/linkedin.svg'
+import { ReactComponent as GitHub } from '../../assets/github.svg'
 
 const Footer = () => {
 	const icones = [
