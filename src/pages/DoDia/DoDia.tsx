@@ -5,6 +5,7 @@ import { IDados } from '../../interface/IDados';
 import ExibeDados from '../../components/ExibeDados';
 
 const PaginaDoDia = () => {
+	console.log('oi')
 	const [dados, setDados] = useState<IDados>();
 	const [loading, setLoading] = useState(false)
 

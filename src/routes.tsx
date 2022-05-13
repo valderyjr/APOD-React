@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import PaginaPrincipal from './pages/Home/PaginaPrincipal';
-import PaginaDoDia from './pages/DoDia';
+import PaginaDoDia from './pages/DoDia/DoDia';
 import EscolhaData from './pages/EscolhaData';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
